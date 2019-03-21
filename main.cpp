@@ -34,11 +34,11 @@ void Music();
 void ReadMe();
 void EmptyAdress();
 /***
-½«»ÚÆå´æÈëÕ»
+å°†æ‚”æ£‹å­˜å…¥æ ˆ
 ***/
 stack<Stones>St;
 /***
-Ö÷³ÌĞò
+ä¸»ç¨‹åº
 ***/
 int main()
 {
@@ -86,7 +86,7 @@ int main()
 }
 
 /***
-Æå×Ó³õÊ¼»¯
+æ£‹å­åˆå§‹åŒ–
 ***/
 void ReadyPieces()
 {
@@ -99,22 +99,22 @@ void ReadyPieces()
 		Pieces[i].Alive = 1;
 		switch (Pieces[i].Name_Digit)
 		{
-		case 0:Pieces[i].X_Background = 10 + 40, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Ë§"); break;
-		case 1:Pieces[i].X_Background = 10 + 30, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Ê¿"); break;
-		case 2:Pieces[i].X_Background = 10 + 50, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Ê¿"); break;
-		case 3:Pieces[i].X_Background = 10 + 20, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Ïà"); break;
-		case 4:Pieces[i].X_Background = 10 + 60, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Ïà"); break;
-		case 5:Pieces[i].X_Background = 10 + 0, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "³µ"); break;
-		case 6:Pieces[i].X_Background = 10 + 80, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "³µ"); break;
-		case 7:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Âí"); break;
-		case 8:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "Âí"); break;
-		case 9:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 12; strcpy(Pieces[i].Name_Chi, "ÅÚ"); break;
-		case 10:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 12; strcpy(Pieces[i].Name_Chi, "ÅÚ"); break;
-		case 11:Pieces[i].X_Background = 10, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "±ø"); break;
-		case 12:Pieces[i].X_Background = 30, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "±ø"); break;
-		case 13:Pieces[i].X_Background = 50, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "±ø"); break;
-		case 14:Pieces[i].X_Background = 70, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "±ø"); break;
-		case 15:Pieces[i].X_Background = 90, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "±ø"); break;
+		case 0:Pieces[i].X_Background = 10 + 40, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "å¸…"); break;
+		case 1:Pieces[i].X_Background = 10 + 30, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "å£«"); break;
+		case 2:Pieces[i].X_Background = 10 + 50, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "å£«"); break;
+		case 3:Pieces[i].X_Background = 10 + 20, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "ç›¸"); break;
+		case 4:Pieces[i].X_Background = 10 + 60, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "ç›¸"); break;
+		case 5:Pieces[i].X_Background = 10 + 0, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "è½¦"); break;
+		case 6:Pieces[i].X_Background = 10 + 80, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "è½¦"); break;
+		case 7:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "é©¬"); break;
+		case 8:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 4; strcpy(Pieces[i].Name_Chi, "é©¬"); break;
+		case 9:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 12; strcpy(Pieces[i].Name_Chi, "ç‚®"); break;
+		case 10:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 12; strcpy(Pieces[i].Name_Chi, "ç‚®"); break;
+		case 11:Pieces[i].X_Background = 10, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "å…µ"); break;
+		case 12:Pieces[i].X_Background = 30, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "å…µ"); break;
+		case 13:Pieces[i].X_Background = 50, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "å…µ"); break;
+		case 14:Pieces[i].X_Background = 70, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "å…µ"); break;
+		case 15:Pieces[i].X_Background = 90, Pieces[i].Y_Background = 16; strcpy(Pieces[i].Name_Chi, "å…µ"); break;
 		}
 		Pieces[i].X_Mat = Pieces[i].X_Background / 10;
 		Pieces[i].Y_Mat = Pieces[i].Y_Background / 4;
@@ -130,22 +130,22 @@ void ReadyPieces()
 		Pieces[i].Y_Mat = Pieces[i].X_Background / 4;
 		switch (Pieces[i].Name_Digit)
 		{
-		case 0:Pieces[i].X_Background = 10 + 40, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "Œ¢"); break;
-		case 1:Pieces[i].X_Background = 10 + 30, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "ÊË"); break;
-		case 2:Pieces[i].X_Background = 10 + 50, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "ÊË"); break;
-		case 3:Pieces[i].X_Background = 10 + 20, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "Ïó"); break;
-		case 4:Pieces[i].X_Background = 10 + 60, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "Ïó"); break;
-		case 5:Pieces[i].X_Background = 10 + 0, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "Ü‡"); break;
-		case 6:Pieces[i].X_Background = 10 + 80, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "Ü‡"); break;
-		case 7:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "ñR"); break;
-		case 8:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "ñR"); break;
-		case 9:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 12 + 20; strcpy(Pieces[i].Name_Chi, "³h"); break;
-		case 10:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 12 + 20; strcpy(Pieces[i].Name_Chi, "³h"); break;
-		case 11:Pieces[i].X_Background = 10, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "×ä"); break;
-		case 12:Pieces[i].X_Background = 30, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "×ä"); break;
-		case 13:Pieces[i].X_Background = 50, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "×ä"); break;
-		case 14:Pieces[i].X_Background = 70, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "×ä"); break;
-		case 15:Pieces[i].X_Background = 90, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "×ä"); break;
+		case 0:Pieces[i].X_Background = 10 + 40, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "å°‡"); break;
+		case 1:Pieces[i].X_Background = 10 + 30, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "ä»•"); break;
+		case 2:Pieces[i].X_Background = 10 + 50, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "ä»•"); break;
+		case 3:Pieces[i].X_Background = 10 + 20, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "è±¡"); break;
+		case 4:Pieces[i].X_Background = 10 + 60, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "è±¡"); break;
+		case 5:Pieces[i].X_Background = 10 + 0, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "è»Š"); break;
+		case 6:Pieces[i].X_Background = 10 + 80, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "è»Š"); break;
+		case 7:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "é¦¬"); break;
+		case 8:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 4 + 36; strcpy(Pieces[i].Name_Chi, "é¦¬"); break;
+		case 9:Pieces[i].X_Background = 10 + 10, Pieces[i].Y_Background = 12 + 20; strcpy(Pieces[i].Name_Chi, "ç ²"); break;
+		case 10:Pieces[i].X_Background = 10 + 70, Pieces[i].Y_Background = 12 + 20; strcpy(Pieces[i].Name_Chi, "ç ²"); break;
+		case 11:Pieces[i].X_Background = 10, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "å’"); break;
+		case 12:Pieces[i].X_Background = 30, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "å’"); break;
+		case 13:Pieces[i].X_Background = 50, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "å’"); break;
+		case 14:Pieces[i].X_Background = 70, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "å’"); break;
+		case 15:Pieces[i].X_Background = 90, Pieces[i].Y_Background = 16 + 12; strcpy(Pieces[i].Name_Chi, "å’"); break;
 		}
 		Pieces[i].X_Mat = Pieces[i].X_Background / 10;
 		Pieces[i].Y_Mat = Pieces[i].Y_Background / 4;
@@ -153,27 +153,27 @@ void ReadyPieces()
 	}
 }
 /***
-»­ÆåÅÌ¡£¡£¡£ÕæÊÇ¸öÌåÁ¦»î
+ç”»æ£‹ç›˜ã€‚ã€‚ã€‚çœŸæ˜¯ä¸ªä½“åŠ›æ´»
 ***/
 void Draw()
 {
 	int i, j = 0, k = 0, h, x = 10 + 0, y = 4;
 	Gotoxy(x, y);
-	printf("©³");
+	printf("â”");
 	for (i = 0; i<38; i++)
 	{
 		j++;
 		if (j == 5)
 		{
-			printf("©×");
+			printf("â”³");
 			j = 0;
 		}
 
 		else
-			printf("©¥");
+			printf("â”");
 	}
-	printf("©¥");
-	printf("©·");
+	printf("â”");
+	printf("â”“");
 	for (j = 0; j<8; j++)
 	{
 		y++;
@@ -182,96 +182,96 @@ void Draw()
 		{
 			for (h = 0; h<3; h++)
 			{
-				printf("©§");
+				printf("â”ƒ");
 				if (h == 1)
-					printf("%25cºÓ%24c½ç%25c", ' ', ' ', ' ');
+					printf("%25cæ²³%24cç•Œ%25c", ' ', ' ', ' ');
 				else
 					printf("%78c", ' ');//9+1
-				printf("©§");
+				printf("â”ƒ");
 				y++;
 				Gotoxy(x, y);
 			}
 			k = 0;
-			printf("©Ç");
+			printf("â”£");
 			for (i = 0; i<38; i++)
 			{
 				k++;
 				if (k == 5)
 				{
-					printf("©×");
+					printf("â”³");
 					k = 0;
 				}
 
 				else
-					printf("©¥");
+					printf("â”");
 			}
-			printf("©¥©Ï");
+			printf("â”â”«");
 			y++;
 			Gotoxy(x, y);
 		}
 		for (h = 0; h<3; h++)
 		{
-			printf("©§");
+			printf("â”ƒ");
 			for (k = 0; k<8; k++)
-				printf("        ©§");//9+1
+				printf("        â”ƒ");//9+1
 			y++;
 			Gotoxy(x, y);
 		}
-		printf("©Ç");
+		printf("â”£");
 		k = 0;
 		for (i = 0; i<38; i++)
 		{
 			k++;
 			if (k == 5)
 			{
-				printf("©ï");
+				printf("â•‹");
 				k = 0;
 			}
 
 			else
-				printf("©¥");
+				printf("â”");
 		}
-		printf("©¥");
-		printf("©Ï");
+		printf("â”");
+		printf("â”«");
 	}
 	for (x = 10 + 31, y = 4; x<40, y<8; x += 2, y++)
 	{
-		Gotoxy(x, y); printf("¨v");
+		Gotoxy(x, y); printf("â•²");
 	}
 	for (x = 10 + 41, y = 8; y<13; x += 2, y++)
 	{
-		Gotoxy(x, y); printf("¨v");
+		Gotoxy(x, y); printf("â•²");
 	}
 	for (x = 10 + 50, y = 4; y<8; x -= 2, y++)
 	{
-		Gotoxy(x, y); printf("¨u");
+		Gotoxy(x, y); printf("â•±");
 	}
 	for (x = 10 + 39, y = 8; y<13; x -= 2, y++)
 	{
-		Gotoxy(x, y); printf("¨u");
+		Gotoxy(x, y); printf("â•±");
 	}
-	Gotoxy(50, 8); printf("¨w");
+	Gotoxy(50, 8); printf("â•³");
 
 	for (x = 10 + 31, y = 32; x<40, y<8 + 28; x += 2, y++)
 	{
-		Gotoxy(x, y); printf("¨v");
+		Gotoxy(x, y); printf("â•²");
 	}
 	for (x = 10 + 41, y = 36; y<13 + 28; x += 2, y++)
 	{
-		Gotoxy(x, y); printf("¨v");
+		Gotoxy(x, y); printf("â•²");
 	}
 	for (x = 10 + 50, y = 32; y<8 + 28; x -= 2, y++)
 	{
-		Gotoxy(x, y); printf("¨u");
+		Gotoxy(x, y); printf("â•±");
 	}
 	for (x = 10 + 39, y = 36; y<13 + 28; x -= 2, y++)
 	{
-		Gotoxy(x, y); printf("¨u");
+		Gotoxy(x, y); printf("â•±");
 	}
-	Gotoxy(50, 36); printf("¨w");
+	Gotoxy(50, 36); printf("â•³");
 }
 /***
-»­µ¥¸öÆå×Ó
+ç”»å•ä¸ªæ£‹å­
 ***/
 void DrawChess(struct Chess chess)
 {
@@ -279,24 +279,24 @@ void DrawChess(struct Chess chess)
 	int y = chess.Y_Background;
 	if (chess.Belong)
 	{
-		Gotoxy(x - 2, y); printf("©§%s©§", chess.Name_Chi);
-		Gotoxy(x - 2, y - 1); printf("©³©¥");
-		Gotoxy(x + 2, y - 1); printf("©·");
-		Gotoxy(x - 2, y + 1); printf("©»©¥");
-		Gotoxy(x + 2, y + 1); printf("©¿");
+		Gotoxy(x - 2, y); printf("â”ƒ%sâ”ƒ", chess.Name_Chi);
+		Gotoxy(x - 2, y - 1); printf("â”â”");
+		Gotoxy(x + 2, y - 1); printf("â”“");
+		Gotoxy(x - 2, y + 1); printf("â”—â”");
+		Gotoxy(x + 2, y + 1); printf("â”›");
 	}
 	else
 	{
-		Gotoxy(x - 2, y); printf("©§%s©§", chess.Name_Chi);
-		Gotoxy(x - 2, y - 1); printf("  ©¤");
-		// Gotoxy(x+2,y-1);printf("¨r");
-		Gotoxy(x - 2, y + 1); printf("¨t©¥");
-		Gotoxy(x + 2, y + 1); printf("¨s");
+		Gotoxy(x - 2, y); printf("â”ƒ%sâ”ƒ", chess.Name_Chi);
+		Gotoxy(x - 2, y - 1); printf("  â”€");
+		// Gotoxy(x+2,y-1);printf("â•®");
+		Gotoxy(x - 2, y + 1); printf("â•°â”");
+		Gotoxy(x + 2, y + 1); printf("â•¯");
 	}
 
 }
 /***
-»­32Á£Æå×Ó
+ç”»32ç²’æ£‹å­
 ***/
 void DrawPieces()
 {
@@ -306,17 +306,17 @@ void DrawPieces()
 		DrawChess(Pieces[i]);
 }
 /***
-ÏÔÊ¾¹â±ê
+æ˜¾ç¤ºå…‰æ ‡
 ***/
 void Cursor(int x, int y)
 {
-	Gotoxy(x - 3, y - 2); printf("¨X");
-	Gotoxy(x + 3, y - 2); printf("¨[");
-	Gotoxy(x - 3, y + 2); printf("¨^");
-	Gotoxy(x + 3, y + 2); printf("¨a");
+	Gotoxy(x - 3, y - 2); printf("â•”");
+	Gotoxy(x + 3, y - 2); printf("â•—");
+	Gotoxy(x - 3, y + 2); printf("â•š");
+	Gotoxy(x + 3, y + 2); printf("â•");
 }
 /***
-Êä³ö×ø±ê
+è¾“å‡ºåæ ‡
 ***/
 void Gotoxy(int x, int y)
 {
@@ -326,7 +326,7 @@ void Gotoxy(int x, int y)
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 }
 /***
-Òş²Ø¹â±ê
+éšè—å…‰æ ‡
 ***/
 void HideCursor()
 {
@@ -334,18 +334,18 @@ void HideCursor()
 	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor_info);
 }
 /***
-Çå³ıÆå×Ó
+æ¸…é™¤æ£‹å­
 ***/
 void ClsPieces(int x, int y)
 {
-	Gotoxy(x, y); printf("¡ñ");
+	Gotoxy(x, y); printf("â—");
 	Gotoxy(x - 2, y - 1); printf("  ");
 	Gotoxy(x + 2, y - 1); printf("  ");
 	Gotoxy(x - 2, y + 1); printf("  ");
 	Gotoxy(x + 2, y + 1); printf("  ");
 }
 /***
-ÓÎÏ·Á÷³Ì
+æ¸¸æˆæµç¨‹
 ***/
 int ControlCursor(int turn)
 {
@@ -356,7 +356,7 @@ int ControlCursor(int turn)
 	Cursor(x, y);
 	while (1)
 	{
-		a = _getch(); Gotoxy(12, 22); printf("%25cºÓ%24c½ç%25c", ' ', ' ', ' ');//ÉÏÏÂ×óÓÒ·½Ïò¼ü¿ØÖÆ£¬¿Õ¸ñ¼üÌá·ÅÆå×Ó
+		a = _getch(); Gotoxy(12, 22); printf("%25cæ²³%24cç•Œ%25c", ' ', ' ', ' ');//ä¸Šä¸‹å·¦å³æ–¹å‘é”®æ§åˆ¶ï¼Œç©ºæ ¼é”®ææ”¾æ£‹å­
 		switch (a)
 		{
 
@@ -414,14 +414,14 @@ int ControlCursor(int turn)
 			y2 = y1 = Y = y;
 			X1 = x;
 			Y1 = y;
-		lable1:      hThread = CreateThread(NULL, 0, ThrProc, NULL, 0, NULL);//¿ªÊ¼ÁíÒ»¶ÎÏß³Ì
+		lable1:      hThread = CreateThread(NULL, 0, ThrProc, NULL, 0, NULL);//å¼€å§‹å¦ä¸€æ®µçº¿ç¨‹
 			while (1)
 			{
 				c = _getch();
 
 				if (c == 224)
 				{
-					d = _getch();//»ñÈ¡ÏÂÒ»¶ÎÎ»ÖÃ
+					d = _getch();//è·å–ä¸‹ä¸€æ®µä½ç½®
 					switch (d)
 					{
 					case 77:if (x == 90) break;
@@ -476,11 +476,11 @@ int ControlCursor(int turn)
 				}
 				if (c == 32)
 				{
-					TerminateThread(hThread, 0);							//Í£Ö¹Ïß³Ì
+					TerminateThread(hThread, 0);							//åœæ­¢çº¿ç¨‹
 					CloseHandle(hThread);
 					hThread = NULL;
 					Cursor(x, y);
-					flag = (*Address[y2 / 4][x2 / 10]).Name_Digit;			//»ñÈ¡Æå×ÓÀà±ğ
+					flag = (*Address[y2 / 4][x2 / 10]).Name_Digit;			//è·å–æ£‹å­ç±»åˆ«
 					switch (flag)
 					{
 					case 0:flag1 = King(x2, y2, x, y, (*Address[y2 / 4][x2 / 10]).Belong); break;
@@ -502,14 +502,14 @@ int ControlCursor(int turn)
 					default:break;
 					}
 					/*
-					ÈôÏÂ×ÓÊ§°Ü£¬ÔòÖØĞÂÏÂ×Ó
+					è‹¥ä¸‹å­å¤±è´¥ï¼Œåˆ™é‡æ–°ä¸‹å­
 					*/
 					if (flag1 == 0)
 					{
 						goto lable1;
 					}
 					/*
-					ÅĞ¶ÏÄ¿±êÊÇ·ñÓĞ×Ó£¬ÎªµĞÎªÓÑ£¬Âä×Ó³É¹¦£¬¸üĞÂĞÅÏ¢
+					åˆ¤æ–­ç›®æ ‡æ˜¯å¦æœ‰å­ï¼Œä¸ºæ•Œä¸ºå‹ï¼Œè½å­æˆåŠŸï¼Œæ›´æ–°ä¿¡æ¯
 					*/
 					(*Address[y1 / 4][x1 / 10]).X_Background = x;
 					(*Address[y1 / 4][x1 / 10]).Y_Background = y;
@@ -552,19 +552,19 @@ lable:;
 	return G;
 }
 /***
-¿ªÊ¼ÓÎÏ·,²¢ÇÒ¸½ÓĞ»ÚÆå¹¦ÄÜ
+å¼€å§‹æ¸¸æˆ,å¹¶ä¸”é™„æœ‰æ‚”æ£‹åŠŸèƒ½
 ***/
 void RunGame()
 {
-	FILE *fout = fopen("Æå¾Ö.out", "a+");///////Æå¾Ö¼ÇÂ¼
-	fprintf(fout, "¸Ã¾Ö½á¹û\n");
+	FILE *fout = fopen("æ£‹å±€.out", "a+");///////æ£‹å±€è®°å½•
+	fprintf(fout, "è¯¥å±€ç»“æœ\n");
 	int step = 0;
 	int  a = 0;
 	int turn = 1;
 Undo_label:	DrawPieces();
 	while (1)
 	{
-		if (step <= 0)//½«µÚÒ»²½Æå´æÈëÕ»
+		if (step <= 0)//å°†ç¬¬ä¸€æ­¥æ£‹å­˜å…¥æ ˆ
 		{
 			Stones Ori;
 			Ori.Turn = turn;
@@ -585,12 +585,12 @@ Undo_label:	DrawPieces();
 		}
 
 		Gotoxy(30, 47);
-		printf("»ÚÆåÇë°´0£¬ÍËµ½Ö÷½çÃæ°´esc£¨ÒÆ¶¯·½Ïò¼üÊ±ÎŞĞ§£©·ñÔò°´ÈÎÒâ¼ü¼ÌĞø");
+		printf("æ‚”æ£‹è¯·æŒ‰0ï¼Œé€€åˆ°ä¸»ç•Œé¢æŒ‰escï¼ˆç§»åŠ¨æ–¹å‘é”®æ—¶æ— æ•ˆï¼‰å¦åˆ™æŒ‰ä»»æ„é”®ç»§ç»­");
 		char cmd;
 		cmd = _getch();
 		if (cmd == 27)
 			return ;
-		if (cmd == '0')//µ¯Õ»£¬¸üĞÂÆå×ÓĞÅÏ¢
+		if (cmd == '0')//å¼¹æ ˆï¼Œæ›´æ–°æ£‹å­ä¿¡æ¯
 		{
 			step--;
 			system("cls");
@@ -605,10 +605,10 @@ Undo_label:	DrawPieces();
 				Address[i][j] = New.Add[i][j];
 			char Party[1];
 			if (turn)
-				strcpy(Party, "ºì");
+				strcpy(Party, "çº¢");
 			else
-				strcpy(Party, "ºÚ");
-			fprintf(fout, "%s»ÚÆåÀ²\n", Party);
+				strcpy(Party, "é»‘");
+			fprintf(fout, "%sæ‚”æ£‹å•¦\n", Party);
 			St.pop();
 			goto Undo_label;
 
@@ -619,7 +619,7 @@ Undo_label:	DrawPieces();
 		else
 		{
 			//	step++;
-			Stones Ori;//½øÕ»
+			Stones Ori;//è¿›æ ˆ
 			Ori.Turn = turn;
 			for (int i = 0; i<32; i++)
 			{
@@ -628,7 +628,7 @@ Undo_label:	DrawPieces();
 				Ori.Ch[i] = Pieces[i];
 			}
 			/***
-			ÕÒ³öÒÆ¶¯¹ıµÄÆå×Ó£¬¼ÇÂ¼×ß·¨
+			æ‰¾å‡ºç§»åŠ¨è¿‡çš„æ£‹å­ï¼Œè®°å½•èµ°æ³•
 			***/
 			Stones Pre = St.top();
 			for (int i = 0; i<32; i++)
@@ -641,10 +641,10 @@ Undo_label:	DrawPieces();
 				{
 					char Party[1];
 					if (Pieces[i].Belong)
-						strcpy(Party, "ºì");
+						strcpy(Party, "çº¢");
 					else
-						strcpy(Party, "ºÚ");
-					fprintf(fout, "µÚ%d²½%s%s X:%d Y:%d ¡ª>X:%d Y:%d\n", step, Party, Pieces[i].Name_Chi, x, y, Pieces[i].X_Mat, Pieces[i].Y_Mat);
+						strcpy(Party, "é»‘");
+					fprintf(fout, "ç¬¬%dæ­¥%s%s X:%d Y:%d â€”>X:%d Y:%d\n", step, Party, Pieces[i].Name_Chi, x, y, Pieces[i].X_Mat, Pieces[i].Y_Mat);
 					break;
 				}
 			}
@@ -679,42 +679,42 @@ Undo_label:	DrawPieces();
 	}
 }
 /***
-Ê¤¸ºÅĞ¶Ï£¬×ßÆåÅĞ¶Ï
+èƒœè´Ÿåˆ¤æ–­ï¼Œèµ°æ£‹åˆ¤æ–­
 ***/
 int Result(int turn, int step)
 {
-	FILE *fout = fopen("Æå¾Ö.out", "a+");
-	//fprintf(fout, "×Ü¼Æ%d²½", step);
+	FILE *fout = fopen("æ£‹å±€.out", "a+");
+	//fprintf(fout, "æ€»è®¡%dæ­¥", step);
 	if (turn)
 	{
 		Gotoxy(40, 45);
-		printf("Ë§     µÄ     ÈË     ×ß				ÒÑ×ßÁË%d²½", step);
+		printf("å¸…     çš„     äºº     èµ°				å·²èµ°äº†%dæ­¥", step);
 
 	}
 	else
 	{
 		Gotoxy(40, 45);
-		printf("Îª     ½«     Õß     ×ß				ÒÑ×ßÁË%d²½", step);
+		printf("ä¸º     å°†     è€…     èµ°				å·²èµ°äº†%dæ­¥", step);
 
 	}
 	if (Pieces[0].Alive == 0)
 	{
 		Gotoxy(40, 45);
-		printf("·½     °Ü     Ô²     Ê¤!,		 	×Ü¼Æ%d²½", step);
-		fprintf(fout, "½«Ó®À²!!!\n");
+		printf("æ–¹     è´¥     åœ†     èƒœ!,		 	æ€»è®¡%dæ­¥", step);
+		fprintf(fout, "å°†èµ¢å•¦!!!\n");
 		return 2;
 	}
 	if (Pieces[16].Alive == 0)
 	{
 		Gotoxy(40, 45);
-		printf("Ô²     °Ü     ·½     Ê¤!,		 	×Ü¼Æ%d²½", step);
-		fprintf(fout, "Ë§µÄÈËÓ®À²À²\n");
+		printf("åœ†     è´¥     æ–¹     èƒœ!,		 	æ€»è®¡%dæ­¥", step);
+		fprintf(fout, "å¸…çš„äººèµ¢å•¦å•¦\n");
 		return 1;
 	}
 	return 0;
 }
 /***
-Ïß³Ì¿ØÖÆ£¬ÊµÏÖÉÁË¸
+çº¿ç¨‹æ§åˆ¶ï¼Œå®ç°é—ªçƒ
 ***/
 DWORD _stdcall ThrProc(LPVOID lpParameter)
 {
@@ -734,18 +734,17 @@ DWORD _stdcall ThrProc(LPVOID lpParameter)
 	return 0;
 }
 /***
-½éÉÜ½çÃæ
+ä»‹ç»ç•Œé¢
 ***/
-char Welcome(int time)//timeÖ¸ÊÇ·ñµÚÒ»´Î´ò¿ªÓÎÏ·£¬µÚÒ»´Î´ò¿ªÔò³öÏÖ¼ÓÔØÒ³Ãæ
+char Welcome(int time)//timeæŒ‡æ˜¯å¦ç¬¬ä¸€æ¬¡æ‰“å¼€æ¸¸æˆï¼Œç¬¬ä¸€æ¬¡æ‰“å¼€åˆ™å‡ºç°åŠ è½½é¡µé¢
 {
 	if (time == 0)
 	{
 		Gotoxy(27, 10);
-		printf("ÖĞ¹úÏóÆå \n");
+		printf("ä¸­å›½è±¡æ£‹ \n");
 		//Gotoxy(20, 11);
-		//printf("×÷Õß£º14010410051 ºúÖÇĞÀ¡¢14010520007 ÓÎÆëºã \n");
 		Gotoxy(25, 12);
-		printf("Å¬Á¦¼ÓÔØÖĞ£¬ÇëÉÔºò");
+		printf("åŠªåŠ›åŠ è½½ä¸­ï¼Œè¯·ç¨å€™");
 		int second;
 		for (second = 0; second<10; second++)
 		{
@@ -757,7 +756,7 @@ char Welcome(int time)//timeÖ¸ÊÇ·ñµÚÒ»´Î´ò¿ªÓÎÏ·£¬µÚÒ»´Î´ò¿ªÔò³öÏÖ¼ÓÔØÒ³Ãæ
 		int s, ii;
 		for (s = 0, ii = 0; s<16; s++, ii++)
 		{
-			printf("¨~");
+			printf("â–‡");
 			switch (ii % 8)
 			{
 			case 1:system("color 1"); break;
@@ -778,17 +777,17 @@ char Welcome(int time)//timeÖ¸ÊÇ·ñµÚÒ»´Î´ò¿ªÓÎÏ·£¬µÚÒ»´Î´ò¿ªÔò³öÏÖ¼ÓÔØÒ³Ãæ
 	system("cls");
 	Gotoxy(20, 10);
 	{
-		printf("ÖĞ¹úÏóÆå£¨·½Ïò¼üÒÆ¶¯£¬¿Õ¸ñ¼üÑ¡È¡£©");
+		printf("ä¸­å›½è±¡æ£‹ï¼ˆæ–¹å‘é”®ç§»åŠ¨ï¼Œç©ºæ ¼é”®é€‰å–ï¼‰");
 		Gotoxy(26, 14);
-		printf("1.Ë«ÈË¶ÔÕ½");
+		printf("1.åŒäººå¯¹æˆ˜");
 		Gotoxy(26, 16);
-		printf("2.¹Û¿´Æå¾Ö");
+		printf("2.è§‚çœ‹æ£‹å±€");
 		Gotoxy(26, 18);
-		printf("3.ÓÎÏ·½éÉÜ");
+		printf("3.æ¸¸æˆä»‹ç»");
 		Gotoxy(26, 20);
-		printf("4.ÍË³öÓÎÏ·");
+		printf("4.é€€å‡ºæ¸¸æˆ");
 		/***
-		ÉèÖÃ¼ıÍ·×ø±ê£¬Í¨¹ıÉÏÏÂÒÆ¶¯Ôö¼õposÖµ£¬¶øºó¶Ô8È¡Ä££¬¼´ÊÇ¶¨Î»
+		è®¾ç½®ç®­å¤´åæ ‡ï¼Œé€šè¿‡ä¸Šä¸‹ç§»åŠ¨å¢å‡poså€¼ï¼Œè€Œåå¯¹8å–æ¨¡ï¼Œå³æ˜¯å®šä½
 		****/
 		int cmd = 0;
 		int pos = 0;
@@ -823,7 +822,7 @@ char Welcome(int time)//timeÖ¸ÊÇ·ñµÚÒ»´Î´ò¿ªÓÎÏ·£¬µÚÒ»´Î´ò¿ªÔò³öÏÖ¼ÓÔØÒ³Ãæ
 	}
 }
 /***
-½«¾üÊ±¾¯¸æ½çÃæ
+å°†å†›æ—¶è­¦å‘Šç•Œé¢
 ***/
 void Check(int turn)
 {
@@ -864,7 +863,7 @@ void Check(int turn)
 			{
 				Waring();
 				Gotoxy(40, 48);
-				printf("%sÒª½«¾üÁË", Pieces[i].Name_Chi);
+				printf("%sè¦å°†å†›äº†", Pieces[i].Name_Chi);
 				Sleep(1000);
 				break;
 			}
@@ -927,17 +926,17 @@ void Waring()
 	}
 }
 /***
-ÔØÈëÄÚÖÃÆå¾Ö
+è½½å…¥å†…ç½®æ£‹å±€
 ***/
 int GameLoad()
 {
 	system("cls");
 	Gotoxy(40, 20);
-	printf("ÆåÆ×Ñ¡Ôñ");
+	printf("æ£‹è°±é€‰æ‹©");
 	Gotoxy(40, 22);
-	printf("1.ºúÈÙ»ªÊ¤Ñî¹Ù­U£¨1964Äê£©");
+	printf("1.èƒ¡è£åèƒœæ¨å®˜ç’˜ï¼ˆ1964å¹´ï¼‰");
 	Gotoxy(40, 24);
-	printf("2.À×·¨Ò«ºÍ»ÆËÉĞù£¨ÏÉÈËÖ¸Â·£©");
+	printf("2.é›·æ³•è€€å’Œé»„æ¾è½©ï¼ˆä»™äººæŒ‡è·¯ï¼‰");
 	FILE *fin;
 	while (1)
 	{
@@ -945,19 +944,19 @@ int GameLoad()
 		decison = _getch();
 		if (decison == '1')
 		{
-			fin = fopen("ÆåÆ×.in", "r");
+			fin = fopen("æ£‹è°±.in", "r");
 			if (fin == NULL)
 			{
-				printf("Çë×¼È··ÅÈëÆåÆ×Î»ÖÃ\n");
+				printf("è¯·å‡†ç¡®æ”¾å…¥æ£‹è°±ä½ç½®\n");
 				return 0;
 			}break;
 		}
 		else if (decison == '2')
 		{
-			fin = fopen("ÆåÆ×1.in", "r");
+			fin = fopen("æ£‹è°±1.in", "r");
 			if (fin == NULL)
 			{
-				printf("\nÇë×¼È··ÅÈëÆåÆ×Î»ÖÃ\n");
+				printf("\nè¯·å‡†ç¡®æ”¾å…¥æ£‹è°±ä½ç½®\n");
 				return 0;
 			}break;
 		}
@@ -967,13 +966,13 @@ int GameLoad()
 	Draw();
 	DrawPieces();
 	/***
-	½«Æå¾Ö´ÓÎÄ¼ş¶ÁÈëµ½¶ÓÁĞ
+	å°†æ£‹å±€ä»æ–‡ä»¶è¯»å…¥åˆ°é˜Ÿåˆ—
 	***/
 	queue<Log>Que;
 	char chat[30];
 	int step;
 	int Sumstep = 0;
-	fscanf(fin, "%s", chat);//»ñÈ¡¸ÃÆå¾ÖĞÅÏ¢
+	fscanf(fin, "%s", chat);//è·å–è¯¥æ£‹å±€ä¿¡æ¯
 	Gotoxy(1, 1);
 	printf("%s", chat);
 	fscanf(fin, "%d", &step);
@@ -982,7 +981,7 @@ int GameLoad()
 	{
 		fscanf(fin, "\n%s", chat);
 		Log StepWork;
-		fscanf(fin, "\nX:%d Y:%d ¡ª>X:%d Y:%d", &StepWork.Pre_X, &StepWork.Pre_Y, &StepWork.Next_X, &StepWork.Next_Y);
+		fscanf(fin, "\nX:%d Y:%d â€”>X:%d Y:%d", &StepWork.Pre_X, &StepWork.Pre_Y, &StepWork.Next_X, &StepWork.Next_Y);
 		Que.push(StepWork);
 	}
 	//puts("\nok4");
@@ -996,7 +995,7 @@ int GameLoad()
 	while (1)
 	{
 		Gotoxy(40, 43);
-		printf("·µ»ØÖ÷²Ëµ¥Çë°´esc");
+		printf("è¿”å›ä¸»èœå•è¯·æŒ‰esc");
 		cmd = _getch();
 		if (cmd == 27)
 			return 0;
@@ -1009,7 +1008,7 @@ int GameLoad()
 			case 77:
 			{
 					   /***
-					   ³ö¶Ó£¬²¢¸üĞÂÆåÅÌ¾ØÕóÎ»ÖÃºÍÆå×ÓĞÅÏ¢
+					   å‡ºé˜Ÿï¼Œå¹¶æ›´æ–°æ£‹ç›˜çŸ©é˜µä½ç½®å’Œæ£‹å­ä¿¡æ¯
 					   ***/
 					   Log STEP = Que.front();
 					   Sumstep = ~Sumstep;
@@ -1030,27 +1029,27 @@ int GameLoad()
 					   if (Sumstep)
 					   {
 						   Gotoxy(40, 45);
-						   printf("Ë§     µÄ     ÈË     ×ß!\n");
-						   printf("ºì%s X:%d Y:%d¡ª¡ª>X:%d Y:%d", (*Address[next_y][next_x]).Name_Chi, pre_x, pre_y, next_x, next_y);
+						   printf("å¸…     çš„     äºº     èµ°!\n");
+						   printf("çº¢%s X:%d Y:%dâ€”â€”>X:%d Y:%d", (*Address[next_y][next_x]).Name_Chi, pre_x, pre_y, next_x, next_y);
 					   }
 					   else
 					   {
 						   Gotoxy(40, 45);
-						   printf("Îª     ½«     Õß     ×ß!\n");
-						   printf("ºÚ%s X:%d Y:%d¡ª¡ª>X:%d Y:%d", (*Address[next_y][next_x]).Name_Chi, pre_x, pre_y, next_x, next_y);
+						   printf("ä¸º     å°†     è€…     èµ°!\n");
+						   printf("é»‘%s X:%d Y:%dâ€”â€”>X:%d Y:%d", (*Address[next_y][next_x]).Name_Chi, pre_x, pre_y, next_x, next_y);
 					   }
 					   Que.pop();
 					   {
 						   if (Pieces[0].Alive == 0)
 						   {
 							   Gotoxy(40, 45);
-							   printf("·½     °Ü     Ô²     Ê¤!");
+							   printf("æ–¹     è´¥     åœ†     èƒœ!");
 							   return 1;
 						   }
 						   if (Pieces[16].Alive == 0)
 						   {
 							   Gotoxy(40, 45);
-							   printf("Ô²     °Ü     ·½     Ê¤!");
+							   printf("åœ†     è´¥     æ–¹     èƒœ!");
 							   return 1;
 						   }
 						   if (Que.empty())
@@ -1069,17 +1068,17 @@ int GameLoad()
 	}
 }
 /****
-²¥·ÅÒôÀÖ
+æ’­æ”¾éŸ³ä¹
 ****/
 void Music()
 {
-	mciSendString(L"open ÓæÖÛ³ªÍí.mp3 alias betabin", NULL, 0, NULL);
+	mciSendString(L"open æ¸”èˆŸå”±æ™š.mp3 alias betabin", NULL, 0, NULL);
 	mciSendString(L"play betabin repeat", NULL, 0, NULL);
 
 
 }
 /***
-ÓÎÏ·½éÉÜ
+æ¸¸æˆä»‹ç»
 ***/
 void ReadMe()
 {
@@ -1087,7 +1086,7 @@ void ReadMe()
 	FILE *read = fopen("Readme.txt", "r");
 	if (read == NULL)
 	{
-		printf("Çë½«Readme.txt·ÅÓÚºÍexeÎÄ¼şÍ¬Ò»Â·¾¶");
+		printf("è¯·å°†Readme.txtæ”¾äºå’Œexeæ–‡ä»¶åŒä¸€è·¯å¾„");
 		Sleep(300);
 		return;
 	}
@@ -1097,11 +1096,11 @@ void ReadMe()
 		fscanf(read, "%s", A);
 		puts(A);
 	}
-	printf("°´ÈÎÒâ¼ü·µ»ØÖ÷²Ëµ¥\n");
+	printf("æŒ‰ä»»æ„é”®è¿”å›ä¸»èœå•\n");
 	_getch();
 }
 /***
-ÖÃ¿ÕÆåÅÌĞÅÏ¢
+ç½®ç©ºæ£‹ç›˜ä¿¡æ¯
 ***/
 void EmptyAdress()
 {
